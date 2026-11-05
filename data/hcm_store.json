@@ -171,6 +171,16 @@
       "createdAt": "2026-10-26T19:37:25.243Z",
       "updatedAt": "2026-10-26T19:37:27.609Z",
       "employeeId": "emp_1793043446997_lccs"
+    },
+    {
+      "id": "B4VnpYrPlHP5Rc1ejfmBnRazMgj1",
+      "name": "abdulsamad",
+      "email": "ir930941@gmail.com",
+      "role": "Employee",
+      "password": "123456",
+      "createdAt": "2026-11-05T11:45:46.532Z",
+      "updatedAt": "2026-11-05T11:45:48.270Z",
+      "employeeId": "emp_1793879147625_hp6h"
     }
   ],
   "employees": [
@@ -569,6 +579,39 @@
       "managerId": null,
       "createdAt": "2026-10-26T19:37:26.997Z",
       "updatedAt": "2026-10-26T19:37:26.997Z"
+    },
+    {
+      "id": "emp_1793879147625_hp6h",
+      "employeeCode": "EMP-HP6H",
+      "name": "abdulsamad",
+      "email": "ir930941@gmail.com",
+      "phone": "",
+      "address": "",
+      "department": "Engineering",
+      "designation": "Software Engineer",
+      "joiningDate": "2026-11-05",
+      "role": "Employee",
+      "status": "Active",
+      "userId": "B4VnpYrPlHP5Rc1ejfmBnRazMgj1",
+      "baseSalary": 72000,
+      "houseRentAllowance": 24000,
+      "medicalAllowance": 12000,
+      "otherAllowance": 12000,
+      "grossSalary": 120000,
+      "bankDetails": {
+        "bankName": "Meezan Bank",
+        "accountNumber": "0101-1234567890",
+        "iban": "PK36MEZN0001011234567890"
+      },
+      "leaveBalances": {
+        "annual": 14,
+        "casual": 10,
+        "sick": 8,
+        "unpaid": 0
+      },
+      "managerId": null,
+      "createdAt": "2026-11-05T11:45:47.625Z",
+      "updatedAt": "2026-11-05T11:45:47.625Z"
     }
   ],
   "attendance": [
@@ -613,6 +656,19 @@
       "createdAt": "2026-10-26T19:34:27.725Z",
       "overtimeHours": 0,
       "isCorrected": true
+    },
+    {
+      "id": "att_emp_1793879147625_hp6h_2026-11-05",
+      "employeeId": "emp_1793879147625_hp6h",
+      "employeeName": "abdulsamad",
+      "date": "2026-11-05",
+      "checkInTime": "03:46",
+      "checkOutTime": null,
+      "workHours": 0,
+      "status": "Present",
+      "notes": "",
+      "updatedAt": "2026-11-05T11:46:32.607Z",
+      "createdAt": "2026-11-05T11:46:32.607Z"
     }
   ],
   "attendance_corrections": [
@@ -1307,6 +1363,28 @@
     }
   ],
   "audit_logs": [
+    {
+      "id": "aud_1793879192871_f50x",
+      "timestamp": "2026-11-05T11:46:32.871Z",
+      "action": "CHECK_IN",
+      "actorId": "B4VnpYrPlHP5Rc1ejfmBnRazMgj1",
+      "actorName": "abdulsamad",
+      "actorRole": "Employee",
+      "details": "CHECK_IN for abdulsamad on 2026-11-05. Status: Present",
+      "targetId": "att_emp_1793879147625_hp6h_2026-11-05",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "aud_1793879147942_rp0x",
+      "timestamp": "2026-11-05T11:45:47.943Z",
+      "action": "CREATE_EMPLOYEE",
+      "actorId": "B4VnpYrPlHP5Rc1ejfmBnRazMgj1",
+      "actorName": "abdulsamad",
+      "actorRole": "Employee",
+      "details": "Created employee: abdulsamad (ir930941@gmail.com) in Engineering",
+      "targetId": "emp_1793879147625_hp6h",
+      "ipAddress": "127.0.0.1"
+    },
     {
       "id": "aud_1793043882635_ykio",
       "timestamp": "2026-10-26T19:44:42.635Z",
